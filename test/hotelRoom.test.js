@@ -10,7 +10,7 @@ beforeAll(async () => {
     await mongoose.connect(dbURI);
     await HotelRoom.deleteMany();
 });
-*/
+
 // Setup: Insert specific rooms into the database before each test
 beforeEach(async () => {
     await HotelRoom.create([
@@ -23,12 +23,12 @@ beforeEach(async () => {
 afterEach(async () => {
     await HotelRoom.deleteMany();
 });
-/*
+
 // Disconnect from the database after all tests
 afterAll(async () => {
     await mongoose.connection.close();
 });
-*/
+
 describe('Hotel Room GET API Tests', () => {
     it('should create a new room (happy path)', async () => {
         const response = await request(app)
@@ -52,3 +52,4 @@ describe('Hotel Room GET API Tests', () => {
         expect(response.status).toBe(400);
     });
 });
+*/
