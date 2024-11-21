@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const app = require('../index'); // Import the Express app
 const HotelRoom = require('../models/HotelRoom'); // Import the HotelRoom model
 
-/*
 // Connect to a test database before running test
 beforeAll(async () => {
     const dbURI = "mongodb://localhost:27017";
@@ -52,4 +51,3 @@ describe('Hotel Room GET API Tests', () => {
         expect(response.status).toBe(400);
     });
 });
-*/
