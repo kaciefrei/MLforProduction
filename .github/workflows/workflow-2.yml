@@ -26,8 +26,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t kaciefrei/mlforproduction:latest .
+          docker build -t kacibouaouli/mlforproduction:latest .
 
       - name: Push Docker image
         run: |
-          docker push kaciefrei/mlforproduction:latest
+          docker push kacibouaouli/mlforproduction:latest
